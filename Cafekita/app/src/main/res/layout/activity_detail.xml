@@ -1,153 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:id="@+id/iv_memu"
                 android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/beefger"
+                android:id="@+id/iv_gambar"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="Harga"
+                android:text="Halal"
                 android:gravity="center_vertical"
                 android:background="@color/colorPrimary"
                 android:textColor="@android:color/white"
                 android:layout_marginLeft="16dp"
                 android:layout_marginBottom="16dp"
-                android:layout_gravity="bottom"/>
+                android:layout_gravity="bottom"
+                />
+
         </FrameLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_nama"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="2dp"
-            android:textSize="30sp"
-            android:textColor="@android:color/black"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_des"
+            android:textSize="32sp"
+            android:text="Rp.40.000"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="1dp"
-            android:lineSpacingMultiplier="1"
-            android:textColor="@android:color/black"/>
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_harga"
+            />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Keterangan"
+            android:text="Beef Burger"
+            android:textSize="20sp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tv_nama"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"
+            android:text="Keterangan"
+            android:id="@+id/tv_keterangan"
+
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="Paket Include :"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="\nNasi 1 Porsi\nIce Tea 1 Cup \nExtra Sauce "
+                    android:id="@+id/tv_bahan"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"/>
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
+            android:text="Klik Pesan sekarang!"
+            />
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            >-->
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:layout_width="56dp"-->
+<!--                android:layout_height="56dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:id="@+id/img_cafe"-->
+<!--                android:src="@drawable/shop"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toEndOf="@id/img_cafe"-->
+<!--                android:text="Cafe Kita"-->
+<!--                android:id="@+id/tv_cafe"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                />-->
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="6dp">
+<!--        </RelativeLayout>-->
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Deskripsi  "
-                    android:textSize="14sp"
-                    android:layout_marginRight="16dp"/>
-
-                <TextView
-                    android:id="@+id/tv_deskripsi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="List Model \n List Model 1 \n List Model 2"
-                    android:textSize="12sp" />
-            </TableRow>
-
-        </TableLayout>
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="6dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bahan-bahan"
-                    android:textSize="14sp"
-                    android:layout_marginRight="18dp"/>
-
-                <TextView
-                    android:id="@+id/tv_ver"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="List Model \n List Model 1 \n List Model 2"
-                    android:textSize="12sp" />
-            </TableRow>
-
-        </TableLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:textColor="@android:color/black"/>
-        </RelativeLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Pesan Sekarang"
+            android:text="Pesan"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:id="@+id/btn_down"
-            android:background="@color/colorPrimary"/>
+            android:id="@+id/btn_pesan"
+            android:background="@color/colorPrimary"
+            />
 
     </LinearLayout>
 
-</ScrollView>
+
+</androidx.core.widget.NestedScrollView>

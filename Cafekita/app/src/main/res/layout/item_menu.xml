@@ -24,19 +24,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_harga"
-            android:text="Harga"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_pesan"
-            android:text="Pesan"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
-            android:background="@color/colorPrimary"/>
+            android:id="@+id/tv_ket"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="3"
+            android:textSize="14dp"
+            android:text="descripsi singkat"
+            />
 
     </LinearLayout>
 
